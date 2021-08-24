@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="推荐视频"
+        android:id="@+id/recommend_btn"
+        />
+    <item
+        android:title="视频排名"
+        android:id="@+id/rank_btn"
+        />
+</menu>

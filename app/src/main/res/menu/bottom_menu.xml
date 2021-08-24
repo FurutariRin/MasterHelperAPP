@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="主页"
+        android:id="@+id/nvg_home"
+        android:icon="@drawable/ic_home"
+
+    />
+    <item
+        android:title="个人"
+        android:id="@+id/nvg_personal"
+        android:icon="@drawable/ic_personal"
+        />
+    <item
+        android:title="上传视频"
+        android:id="@+id/nvg_upload"
+        android:icon="@drawable/ic_upload"
+        />
+    <item
+        android:title="课程分区"
+        android:id="@+id/nvg_setting"
+        android:icon="@drawable/ic_block"
+        />
+    <item
+        android:title="收藏"
+        android:id="@+id/nvg_favorite"
+        android:icon="@drawable/ic_favorite"
+        />
+</menu>

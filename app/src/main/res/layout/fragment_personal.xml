@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout_personalPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.personalFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_personalPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="#ADD8E6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/titlebar_shape"
+                android:gravity="center_horizontal"
+                android:text="个人信息"
+                android:backgroundTint="@color/white"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <TableLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TableRow android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/download"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_download" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="缓存视频" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/history"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_history" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="浏览历史" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/favorite"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_favorite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="我的收藏" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/playLater"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_delayedplay" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="稍后再看" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <LinearLayout
+                    android:id="@+id/classSetting"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_class_magage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="课程设置" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/studyPlan"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_studyplan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="学习计划" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/feedback"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_feedback" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="信息反馈" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/personInfoSetting"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_setting" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="个人信息设置" />
+                </LinearLayout>
+            </TableRow>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:text="更多功能待添加......"></TextView>
+        </TableLayout>
+    </LinearLayout>
+</FrameLayout>

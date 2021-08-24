@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="classtypes" >
+        <item>高等数学</item>
+        <item>概率论</item>
+        <item>线性代数</item>
+        <item>英语阅读</item>
+        <item>政治</item>
+        <item>操作系统</item>
+        <item>数据结构</item>
+        <item>汇编语言</item>
+        <item>离散数学</item>
+        <item>编译原理</item>
+        <item>计算机组成原理</item>
+        <item>计算机网络</item>
+    </string-array>
+    <string-array name="favorite_action" >
+        <item>. . .</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="report_action" >
+        <item>显示</item>
+        <item>隐藏</item>
+    </string-array>
+    <string-array name="userClass" >
+        <item >普通用户</item>
+        <item>禁言用户</item>
+    </string-array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="course_type">
+        <item>高数</item>
+        <item>线代</item>
+        <item>英语</item>
+        <item>大物</item>
+    </string-array>
+</resources>

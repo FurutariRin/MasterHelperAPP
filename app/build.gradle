@@ -1,0 +1,104 @@
+plugins {
+    id 'com.android.application'
+}
+
+allprojects{
+    configurations.all {
+        resolutionStrategy.force 'org.objenesis:objenesis:2.6'
+    }
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+
+    buildFeatures{
+        dataBinding = true
+        // for view binding :
+        // viewBinding = true
+    }
+//    dataBinding{
+//        enabled true
+//    }
+
+    defaultConfig {
+        applicationId "com.cqupt.master_helper"
+        minSdkVersion 26
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            shrinkResources true
+        }
+    }
+    packagingOptions{
+        pickFirst 'META-INF/LICENSE.md' // picks the JavaMail license file
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        merge 'META-INF/LICENSE-notice.md'
+//        exclude 'META-INF/NOTICE'
+//        exclude 'META-INF/NOTICE.txt'
+//        exclude 'META-INF/NOTICE.md'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module")
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+
+    implementation 'com.android.support:support-v4:30.0.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+//    implementation 'com.sun.mail:android-mail:1.5.5'
+    implementation files('libs\\mysql-connector-java-8.0.16.jar')
+    implementation files('libs\\druid-1.2.6.jar')
+    implementation files('libs\\commons-dbutils-1.7.jar')
+    implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    implementation files('libs\\rt.jar')
+    implementation files('libs\\android-mail-1.6.7.jar')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'org.jetbrains:annotations:21.0.1'
+    implementation 'cn.jzvd:jiaozivideoplayer:7.7.0'//饺子播放器框架
+    implementation 'com.github.bumptech.glide:glide:4.12.0'//glide接入
+    implementation 'jp.wasabeef:glide-transformations:4.3.0'//recycleView动画
+    implementation 'jp.wasabeef:recyclerview-animators:4.0.2'
+    implementation 'in.srain.cube:ultra-ptr:1.0.11'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
+// https://mvnrepository.com/artifact/commons-net/commons-net
+    implementation group: 'commons-net', name: 'commons-net', version: '3.6'
+
+//    implementation 'org.junit.jupiter:junit-jupiter'
+//    implementation files('libs\\junit-4.13.1.jar')
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

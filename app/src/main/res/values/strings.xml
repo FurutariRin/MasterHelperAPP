@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">考研帮</string>
+    <string name="login_page_title_1">你好,</string>
+    <string name="login_page_title_2">欢迎来到考研帮</string>
+    <string name="user_id_text">用户ID</string>
+    <string name="userid_input_hint">请输入用户ID</string>
+    <string name="user_password_text">用户密码</string>
+    <string name="user_password_input_hint">请输入用户密码</string>
+    <string name="login_text">登录</string>
+    <string name="register_text">注册</string>
+    <string name="user_name_text">用户名</string>
+    <string name="reg_page_title_text">用户注册</string>
+    <string name="reg_page_user_password_confirm_text">确认密码</string>
+    <string name="reg_page_user_password_confirm_input_hint">请确认密码</string>
+    <string name="reg_page_back_btn_desc">back</string>
+    <string name="video_search_input_hint">请输入搜索内容</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_search_page">searchPageActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

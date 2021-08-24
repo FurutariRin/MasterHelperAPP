@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.m1.pages.loginPageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+
+            <TableRow android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_search" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="用户搜索结果:" />
+            </TableRow>
+
+            <TableRow android:layout_margin="10dp">
+
+                <ImageView />
+
+                <TextView android:text="用户UId:" />
+
+                <TextView
+                    android:id="@+id/txt_searchUid"
+                    android:text="UId" />
+            </TableRow>
+
+            <TableRow android:layout_margin="10dp">
+
+                <ImageView />
+
+                <TextView android:text="用户名:" />
+
+                <TextView
+                    android:id="@+id/txt_searchUname"
+                    android:text="userName" />
+            </TableRow>
+
+            <TableRow android:layout_margin="10dp">
+
+                <ImageView />
+
+                <TextView android:text="Email:" />
+
+                <TextView
+                    android:id="@+id/txt_searchEmail"
+                    android:text="email" />
+            </TableRow>
+
+            <TableRow android:layout_margin="10dp">
+
+                <ImageView />
+
+                <TextView android:text="推荐类型:" />
+
+                <TextView
+                    android:id="@+id/txt_searchRecommendType"
+                    android:text="推荐类型" />
+            </TableRow>
+
+            <TableRow android:layout_margin="10dp">
+
+                <ImageView />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:text="权限等级:" />
+
+                <TextView
+                    android:id="@+id/txt_searchLevel"
+                    android:layout_gravity="center_vertical"
+                    android:text="Level" />
+
+                <Spinner
+                    android:id="@+id/spn_searchLevel"
+                    android:layout_gravity="center_vertical"
+                    android:entries="@array/userClass" />
+
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_changeLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="确认改变权限"
+                    android:textColor="#404040" />
+
+            </LinearLayout>
+
+            <TableRow
+                android:layout_margin="10dp"
+                android:visibility="gone">
+
+                <ImageView />
+
+                <TextView android:text="用户上传的内容:" />
+            </TableRow>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                tools:listitem="@layout/item_manage_user_info_video" />
+        </TableLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

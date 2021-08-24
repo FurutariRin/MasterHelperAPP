@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/reg_page_back_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:background="#00FFFFFF"
+                android:scaleType="fitEnd"
+                app:srcCompat="@drawable/right_arrow"
+                android:contentDescription="@string/reg_page_back_btn_desc" />
+
+            <TextView
+                android:id="@+id/reg_page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/reg_page_title_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#F8F8F8"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                tools:layout_marginRight="20dp"
+                tools:layout_marginTop="100dp">
+
+                <TextView
+                    android:id="@+id/reg_page_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/user_name_text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/black"
+                    tools:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/reg_page_user_name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#00B7B7B7"
+                    android:hint="@string/userid_input_hint"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#F8F8F8"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/reg_page_user_password_text_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/user_password_text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/black"
+                    tools:textSize="20sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reg_page_user_password_input_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint="@string/user_password_input_hint"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:inputType="textPassword"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#F8F8F8"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/reg_page_user_password_confirm_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/reg_page_user_password_confirm_text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/black"
+                    tools:textSize="20sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reg_page_user_password_confirm_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint="@string/reg_page_user_password_confirm_input_hint"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:inputType="textPassword"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/reg_page_reg_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:insetTop="0dp"
+                android:text="@string/register_text"
+                app:backgroundTint="#FF4A3D" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

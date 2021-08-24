@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_personalPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ADD8E6"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/titlebar_shape"
+                android:backgroundTint="@color/white"
+                android:gravity="center_horizontal"
+                android:text="个人信息"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout_userInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    app:srcCompat="@drawable/ic_uid"
+                    app:tint="#707070" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="18dp"
+                    android:gravity="center_vertical"
+                    android:text="Uid :"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_uid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Default_uid"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    app:srcCompat="@drawable/ic_personal"
+                    app:tint="#707070" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="18dp"
+                    android:gravity="center_vertical"
+                    android:text="用户名 :"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_uname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Default_username"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/usernameModifyTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/edt_updateUname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="请输入新用户名"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_updateUname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:text="修改"
+                    android:textColor="#707070" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/userNameModifyBtn"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/white"
+                android:text="修改用户名"
+                android:textColor="#707070" />
+
+            <TableRow
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    app:srcCompat="@drawable/ic_mail"
+                    app:tint="#707070" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="18dp"
+                    android:gravity="center_vertical"
+                    android:text="邮箱 :"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Default_email"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/emailModifyTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_updateEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:hint="请输入新的邮箱"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/btn_sendCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:text="发送验证码"
+                        android:textColor="#707070" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:hint="输入验证码"
+                        android:inputType="number"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/btn_updateEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:backgroundTint="@color/white"
+                        android:text="确认修改"
+                        android:textColor="#707070" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/emailModifyBtn"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/white"
+                android:text="修改邮箱"
+                android:textColor="#707070" />
+
+            <TableRow
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    app:srcCompat="@drawable/ic_password"
+                    app:tint="#707070" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="18dp"
+                    android:gravity="center_vertical"
+                    android:text="密码 :"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="***********"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/passowrModifyTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/edt_oldPsw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="旧密码" />
+
+                <EditText
+                    android:id="@+id/edt_newPsw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="新密码" />
+
+                <EditText
+                    android:id="@+id/edt_againPsw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="再次输入密码" />
+
+                <Button
+                    android:id="@+id/btn_changePsw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:text="确认修改"
+                    android:textColor="#707070" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/passwordModifyBtn"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/white"
+                android:text="修改密码"
+                android:textColor="#707070" />
+
+            <Button
+                android:id="@+id/btn_adminEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/white"
+                android:text="进入管理员后台"
+                android:textColor="#707070"
+                android:visibility="gone" />
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="30dp"
+            android:backgroundTint="#FF4A3D"
+            android:text="登出" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

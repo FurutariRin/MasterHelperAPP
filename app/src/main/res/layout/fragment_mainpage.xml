@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.mainPageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:background="#ADD8E6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/titlebar_shape"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/linearLayout_searchVideoBar"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_search"/>
+            <TextView
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:hint="搜索视频"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainPageBottomNavigationViewFragment"
+            app:menu="@menu/video_nvg_menu"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/subMainpageFragmentContainer">
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

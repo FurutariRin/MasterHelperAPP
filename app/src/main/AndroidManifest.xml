@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cqupt.master_helper">
+
+    <!--获取网络权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REPLACE_EXISTING_PACKAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_fore_foreground"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_permission_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.M1"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.example.m1.pages.manageSubPage.reportManageActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.m1.pages.manageSubPage.manageUserInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.m1.pages.searchPageActivity"
+            android:exported="true"
+            android:label="@string/title_activity_search_page"
+            android:theme="@style/Theme.M1.NoActionBar" />
+        <activity
+            android:name="com.example.m1.pages.videoPlayPageActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" /> <!-- 注册 -->
+        <activity android:name="com.example.m1.pages.loginPageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.m1.pages.registerPageActivity" />
+        <activity android:name="com.example.m1.pages.mainPageActivity" />
+        <activity android:name="com.example.m1.pages.basicManageActivity" />
+        <activity android:name="com.example.m1.pages.manageSubPage.manageVideoInfoActivity" />
+        <activity android:name="com.example.m1.pages.classifyPages.classifySubPages" />
+        <activity android:name="com.example.m1.pages.personalSubPage.personalInfoActivity" />
+
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

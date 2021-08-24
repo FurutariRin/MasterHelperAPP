@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.m1.pages.basicManageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:src="@drawable/ic_personal" />
+
+            <EditText
+                android:id="@+id/userSearchBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_edittext"
+                android:hint="请输入待查找的用户名"
+                android:inputType="number"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/userSearchBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:backgroundTint="@color/white"
+                android:text="查找"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:src="@drawable/ic_personal" />
+
+            <EditText
+                android:id="@+id/videoSearchBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_edittext"
+                android:hint="请输入待查找的视频号"
+                android:inputType="number"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/videoSearchBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:backgroundTint="@color/white"
+                android:text="查找"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reportManageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FF4A3D"
+            android:padding="10dp"
+            android:text="打开举报管理页面"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</FrameLayout>
